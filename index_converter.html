@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="8">
+    <title>conventer JS</title>
+
+
+</head>
+<body>
+    
+
+    <script>
+
+var typeOn = prompt ("Выберете тип валюты, которую хотите конвертировать.Например: доллар (USD), евро (EUR), гривна (UAH) ");
+var typeOff = prompt ("Выберете тип валюты, в какую хотите конвертировать.Например: доллар (USD), евро (EUR), гривна (UAH) ");
+var sum = prompt ("Какую сумму хотите конвертировать?");
+var usd = 27.4;
+var eur = 32.2;
+var uan = 1;
+  if ((typeOn=="usd") && (typeOff=="uan")) {
+      alert("Вы получаете " + (Math.ceil(sum*usd)) + " UAN");
+  }
+  
+  else if ((typeOn=="uan") && (typeOff=="usd")) {
+      usd = 0.036;
+      alert("Вы получаете: " + (Math.ceil(sum*usd)) + " USD");
+  }
+  else if  ((typeOn=="usd") && (typeOff=="eur")){
+      eur = 0.8473;
+      alert("Вы получаете: " + (Math.ceil(sum*eur)) + " EUR");
+  }
+  else if ((typeOn=="eur") && (typeOff=="uan")) {
+      uan = 32.3079;
+      alert("Вы получаете " + (Math.ceil(sum*uan)) + " UAN");
+  }
+  
+  else if  ((typeOn=="eur") && (typeOff=="usd")) {
+      usd =  1.1802 ;
+      alert("Вы получаете: " + (Math.ceil(sum*usd)) + " USD");
+  }
+  else if ((typeOn=="uan") && (typeOff=="eur")){
+      uan = 0.0310;
+      alert("Вы получаете: " + (Math.ceil(sum*uan)) + " EUR");
+  }
+ 
+  else { ((typeOn==true)||(typeOff==true)) 
+    alert("Ошибка. Вводите валюту латинскими символами в нижнем регистре")
+ }
+  
+    </script>
+</body>
+
+
+</html>

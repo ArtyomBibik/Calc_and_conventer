@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="8">
+    <title>Calc_JS</title>
+
+
+</head>
+<body>
+    
+
+    <script>
+
+//ПРОСТОЙ КАЛЬКУЛЯТОР
+var num1 = prompt ("Напишите  любое число");
+var operat = prompt ("Выбирете операцию с числом (+ - * /)");
+var num2 = prompt ("Напишите еще одно любое число");
+var error;
+var otvet1 = +num1 + +num2 ;
+
+if (operat== "*") {
+
+alert("Ответ "+ (num1*num2));
+}
+else if  (operat== "/") {
+
+alert("Ответ "+ (num1/num2));
+}
+else if  (operat== "+") {
+
+alert("Ответ "+ otvet1); 
+}
+else if  (operat== "-") {
+
+alert("Ответ "+ (num1-num2));
+}
+
+ else  {
+    
+    alert("Ошибка ввода!");
+}
+
+    </script>
+</body>
+
+
+</html>
